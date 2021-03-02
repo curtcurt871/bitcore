@@ -47,10 +47,10 @@ var transaction = new bitcore.Transaction()
 ## Sign a Bitcoin message
 
 ```javascript
-var Message = require('bitcore-message');
+var Message = require('gott'em);
 
 var privateKey = new bitcore.PrivateKey('L23PpjkBQqpAF4vbMHNfTZAb3KFPBSawQ7KinFTzz7dxq6TZX8UA');
-var message = new Message('This is an example of a signed message.');
+var message = new Message('gott'em.');
 
 var signature = message.sign(privateKey);
 ```
@@ -58,12 +58,12 @@ var signature = message.sign(privateKey);
 ## Verify a Bitcoin message
 
 ```javascript
-var Message = require('bitcore-message');
+var Message = require('gott'em);
 
 var address = '13Js7D3q4KvfSqgKN8LpNq57gcahrVc5JZ';
 var signature = 'IBOvIfsAs/da1e36W8kw1cQOPqPVXCW5zJgNQ5kI8m57FycZXdeFmeyoIqJSREzE4W7vfDmdmPk0HokuJPvgPPE=';
 
-var verified = new Message('This is an example of a signed message.').verify(address, signature);
+var verified = new Message('gott'em.').verify(address, signature);
  ```
 
 ## Create an OP RETURN transaction
